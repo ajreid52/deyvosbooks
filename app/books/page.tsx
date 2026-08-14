@@ -39,7 +39,7 @@ export default function BooksPage() {
 
       <section className="catalog" aria-labelledby="catalog-title">
         <div className="catalog-heading">
-          <p className="eyebrow">Book one</p>
+          <p className="eyebrow">Part one</p>
           <h2 id="catalog-title">Shadow of the Beast</h2>
         </div>
         <article className="book-card">
@@ -47,7 +47,21 @@ export default function BooksPage() {
           <div className="book-card-copy">
             <span className="book-status">Currently in editing</span>
             <p className="book-card-premise">One life. Two souls.</p>
-            <p>Maret Beorn survived the birth that killed his magically gifted twin. When the ghost attempts possession, his family must decide whether to exorcise the brother who would have been a mage—or teach two souls bound to one life to wield his untold power.</p>
+            <p>Maret Beorn survived the birth that killed his magically gifted twin. Years later, the brother he never knew returns as a shadow only Maret can see. As their haunted bond grows stronger, his family must decide whether the spirit is a lost child to be saved or a dangerous power that must be sealed away.</p>
+            <div className="book-card-actions"><Link className="button primary" href="/#book">Discover the book <Arrow /></Link><Link className="text-link" href="/#letters">Get release news <Arrow /></Link></div>
+          </div>
+        </article>
+        <br></br>
+        <div className="catalog-heading">
+          <p className="eyebrow">Part two</p>
+          <h2 id="catalog-title-part-two">Shadow of the Beast</h2>
+        </div>
+        <article className="book-card">
+          <div className="book-card-art"><img src="/unreleased-book-placeholder.png" alt="An unrevealed book concealed in shadow" width="1536" height="1024" /></div>
+          <div className="book-card-copy">
+            <span className="book-status">Currently in writing</span>
+            <p className="book-card-premise">The seal was never meant to break.</p>
+            <p>When Maret’s ghost-twin returns with greater power, and a blood mage’s hidden designs begin to unfold, the Beorn family’s efforts to protect one another turn to suspicion, betrayal, and catastrophe. To survive, Maret must dictate boundaries between the spirit, the flesh, and the soul.</p>
             <div className="book-card-actions"><Link className="button primary" href="/#book">Discover the book <Arrow /></Link><Link className="text-link" href="/#letters">Get release news <Arrow /></Link></div>
           </div>
         </article>

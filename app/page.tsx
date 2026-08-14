@@ -39,9 +39,9 @@ export default function Home() {
           <p className="eyebrow">Enter Deyvos</p><h2>Magic is running out.<br />The old powers are not.</h2>
           <p className="lead">Deyvos is leaving its age of magic behind. Nations turn toward mechanical invention as their oldest sources of power dwindle—but five centuries of sorcery, worship, and war have left debts that machinery cannot settle.</p>
           <div className="world-notes">
-            <div><b>Alvan</b><span>The Territories mine failing seams of magic, believed to be the gathered might of their goddess.</span></div>
+            <div><b>Alves</b><span>The Territories mine failing seams of magic, believed to be the gathered might of their goddess.</span></div>
             <div><b>Ertenvaal</b><span>The living look to their ancestors for guidance through the trials still to come.</span></div>
-            <div><b>Scarpan</b><span>Necromancers forge life force into objects—and sacrifice the living to survive the desert.</span></div>
+            <div><b>Scarpa</b><span>Necromancers forge life force into objects—and sacrifice the living to survive the desert.</span></div>
           </div>
           <p className="world-warning">From Telmut, a curse is spreading. Every nation will feel the quake.</p>
         </div>
@@ -52,11 +52,11 @@ export default function Home() {
           <img className="author-photo" src="/modelshotaj.jpeg" alt="Portrait of author AJ Reid" width="960" height="637" />
           <img className="author-seal" src="/DeyvosLogo.png" alt="Books of Deyvos" width="1083" height="1058" />
         </div>
-        <div className="author-copy reveal"><p className="eyebrow">About the author</p><h2>AJ Reid</h2><p className="lead">AJ Reid writes dark fantasy about strange magic, complicated people, and heroes who live beyond the usual boundaries.</p><p>Based in North Carolina with a husband and two cats, AJ is a lifelong fantasy reader, musician, costume and prop maker, and active LARPer. <em>Shadow of the Beast</em> is the first book of Deyvos.</p></div>
+        <div className="author-copy reveal"><p className="eyebrow">About the author</p><h2>AJ Reid</h2><p className="lead">AJ Reid writes dark fantasy about strange magic, complicated people, and heroes who live beyond the usual boundaries.</p><p>Based in North Carolina with a husband, Kiko (her cat), and Willow (her dog), AJ is a lifelong fantasy reader, terrible musician, decent costume and prop maker, and occasional LARPer. <em>Shadow of the Beast</em> is the first book of Deyvos.</p></div>
       </section>
 
       <section className="letters section" id="letters">
-        <div className="letters-inner reveal"><p className="eyebrow">Dispatches from Deyvos</p><h2>Come closer.<br />The dark has news.</h2><p>Occasional letters about the book, the world behind it, and where AJ will be next. No noise. No ravens sold to third parties.</p>
+        <div className="letters-inner reveal"><p className="eyebrow">Letters from Deyvos</p><h2>Come closer.<br />The dark may whisper.</h2><p>Occasional letters about the book, the world behind it, and where AJ will be next. No noise. No ravens sold to third parties.</p>
           <div className="letter-actions">
             <a className="button primary" href="https://forms.gle/EzBSfKiXstHPeXsb9" target="_blank" rel="noreferrer">Join Deyvos Letters <Arrow /></a>
             <a className="unsubscribe-link" href="https://forms.gle/aRR929dYS9jQJazy7" target="_blank" rel="noreferrer">Unsubscribe</a>
@@ -67,7 +67,7 @@ export default function Home() {
 
       <section className="news section" id="news">
         <div className="news-heading"><p className="eyebrow">From the road</p><h2>Latest news<br />& appearances</h2></div>
-        <div className="news-list"><article><time>In editing</time><h3>Shadow of the Beast</h3><p>The manuscript is being edited. Preorder news and the next look at Maret’s story will appear here first.</p></article><article><time>Events</time><h3>Meet AJ Reid</h3><p>Readings, conventions, LARP events, and signings will be announced as dates are confirmed.</p></article></div>
+        <div className="news-list"><article><time>In editing</time><h3>Shadow of the Beast</h3><p>The manuscript is being edited. Preorder news and the next look at Maret’s story will appear here first.</p></article><article><time>Events</time><h3>Meet AJ Reid</h3><p>Readings, convention attendances, and signings will be announced as dates are confirmed.</p></article></div>
       </section>
 
       <footer><a className="wordmark" href="#top" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></a><p>Dark fantasy. Strange magic. Complicated people.</p><div><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
