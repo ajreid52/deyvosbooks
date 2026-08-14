@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
@@ -7,7 +8,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></a>
-        <nav aria-label="Main navigation"><a href="#book">The Book</a><a href="#world">Deyvos</a><a href="#author">Author</a><a href="#letters">Letters</a></nav>
+        <nav aria-label="Main navigation"><Link href="/books">Books</Link><a href="#world">Deyvos</a><a href="#author">Author</a><a href="#letters">Letters</a></nav>
       </header>
 
       <section className="hero" id="top" aria-labelledby="hero-title">
