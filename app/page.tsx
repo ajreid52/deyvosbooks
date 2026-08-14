@@ -1,10 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
+
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
 export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="AJ Reid home"><span className="sigil" aria-hidden="true">A</span><span>AJ REID</span></a>
+        <a className="wordmark" href="#top" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></a>
         <nav aria-label="Main navigation"><a href="#book">The Book</a><a href="#world">Deyvos</a><a href="#author">Author</a><a href="#letters">Letters</a></nav>
       </header>
 
@@ -21,7 +23,6 @@ export default function Home() {
       </section>
 
       <section className="book section" id="book">
-        <div className="section-number">I</div>
         <div className="book-copy reveal">
           <p className="eyebrow">Shadow of the Beast</p>
           <h2>Born together.<br />Divided by death.</h2><div className="rule" />
@@ -29,11 +30,10 @@ export default function Home() {
           <p>Maret Beorn, son of Telmut’s ruling family, has always been shunned for the imaginary friend no one else believes in. When the ghost attempts possession, the family can no longer deny what survived alongside him. Now they must decide: exorcise the brother who would have been a mage, or teach two souls bound to one life to wield his untold power.</p>
           <a className="text-link" href="#letters">Be first to hear when it arrives <Arrow /></a>
         </div>
-        <div className="pullquote reveal"><span>II</span>How do you build a failsafe for a power no living person understands?</div>
+        <div className="pullquote reveal">How do you build a failsafe for a power no living person understands?</div>
       </section>
 
       <section className="world section" id="world">
-        <div className="world-orbit" aria-hidden="true"><i /><i /><i /></div>
         <div className="world-content reveal">
           <p className="eyebrow">Enter Deyvos</p><h2>Magic is running out.<br />The old powers are not.</h2>
           <p className="lead">Deyvos is leaving its age of magic behind. Nations turn toward mechanical invention as their oldest sources of power dwindle—but five centuries of sorcery, worship, and war have left debts that machinery cannot settle.</p>
@@ -47,13 +47,20 @@ export default function Home() {
       </section>
 
       <section className="author section" id="author">
-        <div className="author-mark"><img className="author-logo" src="/DeyvosLogo.png" alt="Books of Deyvos — AJ Reid" /></div>
+        <div className="author-portrait">
+          <img className="author-photo" src="/modelshotaj.jpeg" alt="Portrait of author AJ Reid" width="960" height="637" />
+          <img className="author-seal" src="/DeyvosLogo.png" alt="Books of Deyvos" width="1083" height="1058" />
+        </div>
         <div className="author-copy reveal"><p className="eyebrow">About the author</p><h2>AJ Reid</h2><p className="lead">AJ Reid writes dark fantasy about strange magic, complicated people, and heroes who live beyond the usual boundaries.</p><p>Based in North Carolina with a husband and two cats, AJ is a lifelong fantasy reader, musician, costume and prop maker, and active LARPer. <em>Shadow of the Beast</em> is the first book of Deyvos.</p></div>
       </section>
 
       <section className="letters section" id="letters">
         <div className="letters-inner reveal"><p className="eyebrow">Dispatches from Deyvos</p><h2>Come closer.<br />The dark has news.</h2><p>Occasional letters about the book, the world behind it, and where AJ will be next. No noise. No ravens sold to third parties.</p>
-          <form action="mailto:hello@deyvosbooks.com" method="post" encType="text/plain"><label className="sr-only" htmlFor="email">Email address</label><input id="email" name="email" type="email" placeholder="Your email address" required /><button type="submit">Join the list <Arrow /></button></form><small>Unsubscribe whenever you wish.</small>
+          <div className="letter-actions">
+            <a className="button primary" href="https://forms.gle/EzBSfKiXstHPeXsb9" target="_blank" rel="noreferrer">Join Deyvos Letters <Arrow /></a>
+            <a className="unsubscribe-link" href="https://forms.gle/aRR929dYS9jQJazy7" target="_blank" rel="noreferrer">Unsubscribe</a>
+          </div>
+          <small>Both options open a short Google Form in a new tab.</small>
         </div>
       </section>
 
@@ -62,7 +69,7 @@ export default function Home() {
         <div className="news-list"><article><time>In editing</time><h3>Shadow of the Beast</h3><p>The manuscript is being edited. Preorder news and the next look at Maret’s story will appear here first.</p></article><article><time>Events</time><h3>Meet AJ Reid</h3><p>Readings, conventions, LARP events, and signings will be announced as dates are confirmed.</p></article></div>
       </section>
 
-      <footer><a className="wordmark" href="#top"><span className="sigil">A</span><span>AJ REID</span></a><p>Dark fantasy. Strange magic. Complicated people.</p><div><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
+      <footer><a className="wordmark" href="#top" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></a><p>Dark fantasy. Strange magic. Complicated people.</p><div><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
     </main>
   );
 }
