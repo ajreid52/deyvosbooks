@@ -9,10 +9,11 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top" aria-labelledby="hero-title">
-        <div className="hero-art" role="img" aria-label="A lone traveler approaches a monumental gate haunted by pale spirits" />
+        <div className="hero-art" role="img" aria-label="Telmut Keep rises above coastal orchards and working docks beneath storm-gray skies" />
         <div className="hero-copy">
           <p className="eyebrow">Book one of Deyvos</p>
-          <h1 id="hero-title">One life.<br />Two souls.</h1>
+          <h1 id="hero-title">Shadow of<br />the Beast</h1>
+          <p className="hero-premise">One life. Two souls.</p>
           <p className="hero-hook">Maret Beorn survived the birth that killed his twin. The brother who inherited their magic never truly left.</p>
           <div className="actions"><a className="button primary" href="#book">Discover the book <Arrow /></a><span className="button muted" aria-label="Preorder coming soon">Preorder soon</span></div>
         </div>
