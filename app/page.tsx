@@ -14,21 +14,22 @@ export default function Home() {
       <section className="hero" id="top" aria-labelledby="hero-title">
         <div className="hero-art" role="img" aria-label="Telmut Keep rises above coastal orchards and working docks beneath storm-gray skies" />
         <div className="hero-copy">
-          <p className="eyebrow">Book one of Deyvos</p>
+          <p className="eyebrow">A Deyvos novel · Volume One</p>
           <h1 id="hero-title">Shadow of<br />the Beast</h1>
           <p className="hero-premise">One life. Two souls.</p>
-          <p className="hero-hook">Maret Beorn survived the birth that killed his twin. The brother who inherited their magic never truly left.</p>
-          <div className="actions"><a className="button primary" href="#book">Discover the book <Arrow /></a><span className="button muted" aria-label="Preorder coming soon">Preorder soon</span></div>
+          <p className="hero-hook">Maret Beorn survived the birth that killed his magically gifted twin. The brother death took never truly left him.</p>
+          <div className="actions"><Link className="button primary" href="/books/shadow-of-the-beast-volume-one">Discover Volume One <Arrow /></Link><span className="button muted" aria-label="Preorder coming soon">Preorder soon</span></div>
         </div>
         <a className="scroll-cue" href="#book"><span>Descend</span><i aria-hidden="true" /></a>
       </section>
 
       <section className="book section" id="book">
         <div className="book-copy reveal">
-          <p className="eyebrow">Shadow of the Beast</p>
-          <h2>Born together.<br />Divided by death.</h2><div className="rule" />
-          <p className="lead">The one born with power was stillborn. The one born without it lived—forever haunted by his brother’s ghastly potential.</p>
-          <p>Maret Beorn, son of Telmut’s ruling family, has always been shunned for the imaginary friend no one else believes in. When the ghost attempts possession, the family can no longer deny what survived alongside him. Now they must decide: exorcise the brother who would have been a mage, or teach two souls bound to one life to wield his untold power.</p>
+          <p className="eyebrow">Shadow of the Beast · Volume One</p>
+          <h2>Conjoined at the soul<br />Undivided by death.</h2><div className="rule" />
+          <p className="lead">The one with magic was stillborn. The one born without it lived haunted by the brother death could not take.</p>
+          <p>Maret Beorn has spent his childhood fearing a shadow no one else can see. When the apparition reveals an impossible connection to his family’s buried grief, the truth can no longer be dismissed: Maret’s dead twin never truly left him. But as the brothers’ bond awakens a power no living mage understands, saving one may place them both—and everyone around them—in danger.
+          </p>
           <a className="text-link" href="#letters">Be first to hear when it arrives <Arrow /></a>
         </div>
         <div className="pullquote reveal">How do you build a failsafe for a power no living person understands?</div>
@@ -43,7 +44,7 @@ export default function Home() {
             <div><b>Ertenvaal</b><span>The living look to their ancestors for guidance through the trials still to come.</span></div>
             <div><b>Scarpa</b><span>Necromancers forge life force into objects—and sacrifice the living to survive the desert.</span></div>
           </div>
-          <p className="world-warning">From Telmut, a curse is spreading. Every nation will feel the quake.</p>
+          <p className="world-warning">In Telmut, an old wound is opening. Every nation will feel the quake and Deyvos may be forever changed.</p>
         </div>
       </section>
 
@@ -52,7 +53,7 @@ export default function Home() {
           <img className="author-photo" src="/modelshotaj.jpeg" alt="Portrait of author AJ Reid" width="960" height="637" />
           <img className="author-seal" src="/DeyvosLogo.png" alt="Books of Deyvos" width="1083" height="1058" />
         </div>
-        <div className="author-copy reveal"><p className="eyebrow">About the author</p><h2>AJ Reid</h2><p className="lead">AJ Reid writes dark fantasy about strange magic, complicated people, and heroes who live beyond the usual boundaries.</p><p>Based in North Carolina with a husband, Kiko (her cat), and Willow (her dog), AJ is a lifelong fantasy reader, terrible musician, decent costume and prop maker, and occasional LARPer. <em>Shadow of the Beast</em> is the first book of Deyvos.</p></div>
+        <div className="author-copy reveal"><p className="eyebrow">About the author</p><h2>AJ Reid</h2><p className="lead">AJ Reid writes dark fantasy about strange magic, complicated people, and heroes who live beyond the usual boundaries.</p><p>Based in North Carolina with a husband, Kiko (her cat), and Willow (her dog), AJ is a lifelong fantasy reader, hobbyist musician, decent costume and prop maker, and occasional LARPer. <em>Shadow of the Beast</em> is the first Deyvos novel, published in two volumes.</p></div>
       </section>
 
       <section className="letters section" id="letters">
@@ -67,7 +68,7 @@ export default function Home() {
 
       <section className="news section" id="news">
         <div className="news-heading"><p className="eyebrow">From the road</p><h2>Latest news<br />& appearances</h2></div>
-        <div className="news-list"><article><time>In editing</time><h3>Shadow of the Beast</h3><p>The manuscript is being edited. Preorder news and the next look at Maret’s story will appear here first.</p></article><article><time>Events</time><h3>Meet AJ Reid</h3><p>Readings, convention attendances, and signings will be announced as dates are confirmed.</p></article></div>
+        <div className="news-list"><article><time>In editing</time><h3>Shadow of the Beast: Volume One</h3><p>The manuscript is being edited. Preorder news and the next look at Maret’s story will appear here first.</p></article><article><time>Events</time><h3>Meet AJ Reid</h3><p>Readings, convention attendances, and signings will be announced as dates are confirmed.</p></article></div>
       </section>
 
       <footer><a className="wordmark" href="#top" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></a><p>Dark fantasy. Strange magic. Complicated people.</p><div><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
