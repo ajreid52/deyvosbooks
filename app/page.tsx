@@ -47,7 +47,7 @@ export default function Home() {
       </section>
 
       <section className="author section" id="author">
-        <div className="author-mark" aria-hidden="true">AR</div>
+        <div className="author-mark"><img className="author-logo" src="/DeyvosLogo.png" alt="Books of Deyvos — AJ Reid" /></div>
         <div className="author-copy reveal"><p className="eyebrow">About the author</p><h2>AJ Reid</h2><p className="lead">AJ Reid writes dark fantasy about strange magic, complicated people, and heroes who live beyond the usual boundaries.</p><p>Based in North Carolina with a husband and two cats, AJ is a lifelong fantasy reader, musician, costume and prop maker, and active LARPer. <em>Shadow of the Beast</em> is the first book of Deyvos.</p></div>
       </section>
 
