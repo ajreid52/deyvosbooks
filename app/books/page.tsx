@@ -26,7 +26,7 @@ export default function BooksPage() {
         <div className="catalog-heading">
           <p className="eyebrow">The first Deyvos novel</p>
           <h2 id="catalog-title">Shadow of the Beast</h2>
-          <p className="story-intro">One story, published in two volumes.</p>
+          <p className="story-intro">One novel, published in two volumes and intended to be read in order.</p>
         </div>
         <div className="volume-list">
           {volumes.map((book) => (
@@ -41,7 +41,7 @@ export default function BooksPage() {
                 <div className="book-card-copy">
                   <span className="book-status">{book.status}</span>
                   <p className="book-card-premise">{book.premise}</p>
-                  <p>{book.description}</p>
+                  <p>{book.volume === "Volume One" ? "A boy haunted by the twin he never knew must uncover what survived alongside him." : "Maret’s story continues as the bond he cannot escape begins to test every boundary."}</p>
                   <div className="book-card-actions">
                     <Link className="button" href={`/books/${book.slug}`}>Explore {book.volume} <Arrow /></Link>
                     <Link className="text-link" href="/#letters">Get release news <Arrow /></Link>
@@ -51,7 +51,7 @@ export default function BooksPage() {
             </article>
           ))}
         </div>
-        <p className="catalog-note"><em>Shadow of the Beast</em> is the first Deyvos novel, published in two volumes. Future novels will join the shelf here.</p>
+        <p className="catalog-note">Begin with <em>Birthright</em>, then continue into <em>Inheritance</em>. Future Deyvos novels will join the shelf here.</p>
       </section>
 
       <footer><Link className="wordmark" href="/" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></Link><p>Dark fantasy. Strange magic. Complicated people.</p><div><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>

@@ -45,9 +45,10 @@ test("server-renders the Books catalog", async () => {
   assert.match(html, /Shadow of the Beast/i);
   assert.match(html, /Volume One/i);
   assert.match(html, /Volume Two/i);
-  assert.match(html, /Subtitle to be revealed/i);
+  assert.match(html, /Birthright/i);
+  assert.match(html, /Inheritance/i);
   assert.match(html, /Currently in editing/i);
-  assert.match(html, /Future novels will join the shelf here/i);
+  assert.match(html, /Future Deyvos novels will join the shelf here/i);
 });
 
 for (const [slug, volume, image] of [
@@ -60,7 +61,8 @@ for (const [slug, volume, image] of [
     const html = await response.text();
     assert.match(html, new RegExp(`<title>Shadow of the Beast: ${volume} \\| AJ Reid</title>`, "i"));
     assert.match(html, new RegExp(`>${volume}<`, "i"));
-    assert.match(html, /Subtitle to be revealed/i);
+    assert.match(html, /Inside[\s\S]*?(Birthright|Inheritance)/i);
+    assert.match(html, /Reading order/i);
     assert.match(html, new RegExp(image.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
   });
 }

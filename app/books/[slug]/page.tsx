@@ -28,6 +28,9 @@ const Arrow = () => <span aria-hidden="true">↗</span>;
 export default async function VolumePage({ params }: Props) {
   const book = getVolume((await params).slug);
   if (!book) notFound();
+  const currentIndex = volumes.findIndex(({ slug }) => slug === book.slug);
+  const previous = volumes[currentIndex - 1];
+  const next = volumes[currentIndex + 1];
 
   return (
     <main className="volume-page">
@@ -43,11 +46,28 @@ export default async function VolumePage({ params }: Props) {
           <p className="volume-subtitle">{book.subtitle}</p>
           <span className="volume-status">{book.status}</span>
           <p className="volume-premise">{book.premise}</p>
-          <p className="volume-description">{book.description}</p>
-          <p className="volume-context">The first Deyvos novel, published in two volumes.</p>
+          <p className="volume-context">{book.volume === "Volume One" ? "Begin here. Birthright opens the first Deyvos novel." : "Inheritance continues directly from Birthright and is intended to be read second."}</p>
           <div className="volume-actions"><Link className="button primary" href="/#letters">Get release news <Arrow /></Link><Link className="text-link" href="/books">View all books</Link></div>
         </div>
       </article>
+      <section className="volume-details" aria-labelledby="inside-title">
+        <div className="volume-synopsis">
+          <p className="eyebrow">The story</p>
+          <h2 id="inside-title">Inside {book.subtitle}</h2>
+          <p>{book.description}</p>
+        </div>
+        <div className="volume-highlights">
+          {book.highlights.map((highlight) => <div key={highlight.title}><h3>{highlight.title}</h3><p>{highlight.text}</p></div>)}
+        </div>
+      </section>
+      <aside className="reading-order" aria-label="Reading order">
+        <div><p className="eyebrow">Reading order</p><h2>{previous ? "Continue the story from the beginning." : "The story continues."}</h2></div>
+        <div className="reading-order-links">
+          {previous && <Link href={`/books/${previous.slug}`}><small>Previous</small><strong>{previous.volume}: {previous.subtitle}</strong></Link>}
+          {next && <Link href={`/books/${next.slug}`}><small>Next</small><strong>{next.volume}: {next.subtitle}</strong></Link>}
+          {!next && <Link href="/books"><small>Return to</small><strong>All Books of Deyvos</strong></Link>}
+        </div>
+      </aside>
       <footer><Link className="wordmark" href="/" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></Link><p>Dark fantasy. Strange magic. Complicated people.</p><div><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
     </main>
   );
