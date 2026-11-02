@@ -19,7 +19,7 @@ export default function BooksPage() {
       </header>
 
       <section className="books-hero">
-        <div><p className="eyebrow">The stories of Deyvos</p><h1>Books of<br />Deyvos</h1><p>Dark fantasy about strange magic, difficult loyalties, and people living beyond the usual boundaries.</p></div>
+        <div><p className="eyebrow">The full novels</p><h1>Books of<br />Deyvos</h1><p>Dark fantasy about strange magic, difficult loyalties, and people living beyond the understood world.</p></div>
       </section>
 
       <section className="catalog" aria-labelledby="catalog-title">

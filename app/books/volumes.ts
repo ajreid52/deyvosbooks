@@ -38,14 +38,14 @@ export const volumes: Volume[] = [
     premise: "The seal was never meant to break.",
     description: "When Maret’s ghost-twin returns with greater power, and a blood mage’s hidden designs begin to unfold, the Beorn family’s efforts to protect one another turn to suspicion, betrayal, and catastrophe. To survive, Maret must dictate boundaries between the spirit, the flesh, and the soul.",
     highlights: [
-      { title: "Power without boundaries", text: "The bond between spirit and flesh grows stronger—and harder to contain." },
-      { title: "Loyalties under strain", text: "Protection turns to suspicion as the Beorn family begins to fracture." },
-      { title: "A hidden design", text: "A blood mage’s plans threaten consequences far beyond one family." },
+      { title: "Power without boundaries", text: "Maret races to teach his ghost twin responsibility before his strength outgrows his patience." },
+      { title: "Loyalties under strain", text: "Fear turns belief into suspicion as the Beorn family begins to fracture." },
+      { title: "A hidden design", text: "A blood mage’s plans threaten consequences far beyond one family or one nation." },
     ],
     image: "/unreleased-book-placeholder.png",
     imageWidth: 1536,
     imageHeight: 1024,
-    imageAlt: "An unrevealed book concealed beneath deep blue fabric",
+    imageAlt: "A dark book concealed beneath deep blue fabric",
   },
 ];
 

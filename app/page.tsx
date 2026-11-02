@@ -17,7 +17,7 @@ export default function Home() {
           <p className="eyebrow">A Deyvos novel · Volume One</p>
           <h1 id="hero-title">Shadow of<br />the Beast</h1>
           <p className="hero-premise">One life. Two souls.</p>
-          <p className="hero-hook">Maret Beorn survived the birth that killed his magically gifted twin. The brother death took never truly left him.</p>
+          <p className="hero-hook">Maret Beorn survived the birth that killed his magically gifted twin. But his brother never left his side.</p>
           <div className="actions"><Link className="button primary" href="/books/shadow-of-the-beast-volume-one">Discover Volume One <Arrow /></Link><span className="button muted" aria-label="Preorder coming soon">Preorder soon</span></div>
         </div>
         <a className="scroll-cue" href="#book"><span>Descend</span><i aria-hidden="true" /></a>
@@ -26,7 +26,7 @@ export default function Home() {
       <section className="book section" id="book">
         <div className="book-copy reveal">
           <p className="eyebrow">Shadow of the Beast · Volume One</p>
-          <h2>Conjoined at the soul<br />Undivided by death.</h2><div className="rule" />
+          <h2>Conjoined at the soul.<br />Undivided by death.</h2><div className="rule" />
           <p className="lead">The one with magic was stillborn. The one born without it lived haunted by the brother death could not take.</p>
           <p>Maret Beorn has spent his childhood fearing a shadow no one else can see. When the apparition reveals an impossible connection to his family’s buried grief, the truth can no longer be dismissed: Maret’s dead twin never truly left him. But as the brothers’ bond awakens a power no living mage understands, saving one may place them both—and everyone around them—in danger.
           </p>
@@ -37,14 +37,14 @@ export default function Home() {
 
       <section className="world section" id="world">
         <div className="world-content reveal">
-          <p className="eyebrow">Enter Deyvos</p><h2>Magic is running out.<br />The old powers are not.</h2>
-          <p className="lead">Deyvos is leaving its age of magic behind. Nations turn toward mechanical invention as their oldest sources of power dwindle—but five centuries of sorcery, worship, and war have left debts that machinery cannot settle.</p>
+          <p className="eyebrow">Enter Deyvos</p><h2>Magic is running out.<br />It's time to get desperate.</h2>
+          <p className="lead">Deyvos is leaving its age of magic behind. Nations turn toward mechanical invention as their oldest sources of power dwindle. From gods to old debts, they disagree about everything except the wish to avoid war—for now.</p>
           <div className="world-notes">
             <div><b>Alves</b><span>The Territories mine failing seams of magic, believed to be the gathered might of their goddess.</span></div>
             <div><b>Ertenvaal</b><span>The living look to their ancestors for guidance through the trials still to come.</span></div>
-            <div><b>Scarpa</b><span>Necromancers forge life force into objects—and sacrifice the living to survive the desert.</span></div>
+            <div><b>Scarpa</b><span>Necromancers forge life force into objects and sacrifice the living to survive the desert.</span></div>
           </div>
-          <p className="world-warning">In Telmut, an old wound is opening. Every nation will feel the quake and Deyvos may be forever changed.</p>
+          <p className="world-warning">In Telmut, an old wound is opening. Every nation will feel the quake and Deyvos may be changed forever.</p>
         </div>
       </section>
 
@@ -53,7 +53,7 @@ export default function Home() {
           <img className="author-photo" src="/modelshotaj.jpeg" alt="Portrait of author AJ Reid" width="960" height="637" />
           <img className="author-seal" src="/DeyvosLogo.png" alt="Books of Deyvos" width="1083" height="1058" />
         </div>
-        <div className="author-copy reveal"><p className="eyebrow">About the author</p><h2>AJ Reid</h2><p className="lead">AJ Reid writes dark fantasy about strange magic, complicated people, and heroes who live beyond the usual boundaries.</p><p>Based in North Carolina with a husband, Kiko (her cat), and Willow (her dog), AJ is a lifelong fantasy reader, hobbyist musician, decent costume and prop maker, and occasional LARPer. <em>Shadow of the Beast</em> is the first Deyvos novel, published in two volumes.</p></div>
+        <div className="author-copy reveal"><p className="eyebrow">About the author</p><h2>AJ Reid</h2><p className="lead">AJ Reid writes dark fantasy about strange magic and complicated people who have no business being heroes.</p><p>Based in North Carolina with her husband, cat, and dog, AJ is a lifelong fantasy reader, hobbyist musician, decent costume and prop maker, and occasional LARPer. <em>Shadow of the Beast</em> is the first Deyvos novel, published in two volumes.</p></div>
       </section>
 
       <section className="letters section" id="letters">
