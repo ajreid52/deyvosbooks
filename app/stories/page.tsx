@@ -25,12 +25,20 @@ export default function StoriesPage() {
 
       <section className="stories-archive" aria-labelledby="stories-heading">
         <div className="stories-heading"><p className="eyebrow">The collection</p><h2 id="stories-heading">Choose a<br />strange door.</h2></div>
-        <article className="story-placeholder story-entry">
-          <div className="story-meta"><time dateTime="2023-10-02">October 2, 2023</time><span>Five Pillars</span><span>Horror</span><span>11 min read</span></div>
-          <h3><Link href="/stories/the-eternal-goodbye">The Eternal Goodbye</Link></h3>
-          <p>Two revenants hold each other to the path through death, resurrection, and the slow erosion of memory. A standalone horror story set in the world of Five Pillars LARP.</p>
-          <Link className="text-link" href="/stories/the-eternal-goodbye">Read the story <span aria-hidden="true">↗</span></Link>
-        </article>
+        <div className="stories-list">
+          <article className="story-placeholder story-entry">
+            <div className="story-meta"><time dateTime="2023-10-11">October 11, 2023</time><span>Standalone</span><span>Horror</span><span>21 min read</span></div>
+            <h3><Link href="/stories/the-wish-that-killed-us">The Wish that Killed Us</Link></h3>
+            <p>Three friends escape a haunted school through a wish-granting mirror—and discover that every wish has already come true.</p>
+            <Link className="text-link" href="/stories/the-wish-that-killed-us">Read the story <span aria-hidden="true">↗</span></Link>
+          </article>
+          <article className="story-placeholder story-entry">
+            <div className="story-meta"><time dateTime="2023-10-02">October 2, 2023</time><span>Five Pillars</span><span>Horror</span><span>11 min read</span></div>
+            <h3><Link href="/stories/the-eternal-goodbye">The Eternal Goodbye</Link></h3>
+            <p>Two revenants hold each other to the path through death, resurrection, and the slow erosion of memory. A standalone horror story set in the world of Five Pillars LARP.</p>
+            <Link className="text-link" href="/stories/the-eternal-goodbye">Read the story <span aria-hidden="true">↗</span></Link>
+          </article>
+        </div>
       </section>
 
       <section className="stories-note"><img src="/DeyvosSkullVector fade.png" alt="" aria-hidden="true" width="417" height="417" /><div><p className="eyebrow">What belongs here</p><p>Character moments. Folklore. In-world documents. Strange encounters. Stories from Deyvos, Five Pillars, and whatever other dark corner opens next.</p><Link className="text-link" href="/newsletters">Hear when a story arrives <span aria-hidden="true">↗</span></Link></div></section>
