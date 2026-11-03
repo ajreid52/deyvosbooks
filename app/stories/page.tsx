@@ -43,7 +43,7 @@ export default function StoriesPage() {
 
       <section className="stories-note"><img src="/DeyvosSkullVector fade.png" alt="" aria-hidden="true" width="417" height="417" /><div><p className="eyebrow">What belongs here</p><p>Character moments. Folklore. In-world documents. Strange encounters. Stories from Deyvos, Five Pillars, and whatever other dark corner opens next.</p><Link className="text-link" href="/newsletters">Hear when a story arrives <span aria-hidden="true">↗</span></Link></div></section>
 
-      <footer><Link className="wordmark" href="/" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></Link><p>Dark fantasy. Strange magic. Complicated people.</p><div><Link href="/newsletters">Newsletters</Link><a href="mailto:deyvosbooks@gmail.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
+      <footer><Link className="wordmark" href="/" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></Link><p>Dark fantasy. Strange magic. Complicated people.</p><div><Link href="/newsletters">Newsletters</Link><Link href="/privacy">Privacy</Link><a href="mailto:deyvosbooks@gmail.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
     </main>
   );
 }
