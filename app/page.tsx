@@ -35,6 +35,25 @@ export default function Home() {
         <div className="pullquote reveal">How do you build a failsafe for a power no living person understands?</div>
       </section>
 
+      <section className="trailer section" id="trailer" aria-labelledby="trailer-heading">
+        <div className="trailer-copy reveal">
+          <p className="eyebrow">Enter the story</p>
+          <h2 id="trailer-heading">Watch the<br />book trailer.</h2>
+          <p>Step into Telmut, where an old grief is stirring and the dead refuse to remain silent.</p>
+          <a className="text-link" href="https://youtu.be/tY6egBwd2Aw" target="_blank" rel="noreferrer">Watch on YouTube <Arrow /></a>
+        </div>
+        <div className="trailer-frame reveal">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/tY6egBwd2Aw?rel=0"
+            title="Shadow of the Beast book trailer"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
+      </section>
+
       <section className="world section" id="world">
         <div className="world-content reveal">
           <p className="eyebrow">Enter Deyvos</p><h2>Magic is running out.<br />It's time to get desperate.</h2>
