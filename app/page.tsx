@@ -91,7 +91,7 @@ export default function Home() {
         <div className="news-list"><article><time>In editing</time><h3>Shadow of the Beast: Volume One</h3><p>The manuscript is being edited. Preorder news and the next look at Maret’s story will appear here first.</p></article><article><time>Events</time><h3>Meet AJ Reid</h3><p>Readings, convention attendances, and signings will be announced as dates are confirmed.</p></article></div>
       </section>
 
-      <footer><a className="wordmark" href="#top" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></a><p>Dark fantasy. Strange magic. Complicated people.</p><div><Link href="/stories">Stories</Link><Link href="/newsletters">Newsletters</Link><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
+      <footer><a className="wordmark" href="#top" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></a><p>Dark fantasy. Strange magic. Complicated people.</p><div><Link href="/stories">Stories</Link><Link href="/newsletters">Newsletters</Link><a href="mailto:deyvosbooks@gmail.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
     </main>
   );
 }
