@@ -14,7 +14,7 @@ export default function NotFound() {
       <section className="not-found-content" aria-labelledby="not-found-title">
         <p className="eyebrow">Error 404 · Beyond the mapped roads</p>
         <h1 id="not-found-title">You have entered<br />the Bleak.</h1>
-        <p className="bleak-warning">You will be lost.</p>
+        <p className="bleak-warning">Are you lost, darkling?</p>
         <div className="rule" />
         <p className="not-found-explanation">The page you sought cannot be found. It may have moved, vanished, or never existed beyond the edge of the map.</p>
         <p className="not-found-direction">Turn back while the road still remembers you.</p>
