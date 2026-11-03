@@ -36,7 +36,7 @@ export default async function VolumePage({ params }: Props) {
     <main className="volume-page">
       <header className="site-header inner-header">
         <Link className="wordmark" href="/" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></Link>
-        <nav aria-label="Main navigation"><Link href="/books" aria-current="page">Books</Link><Link href="/#world">Deyvos</Link><Link href="/#author">Author</Link><Link href="/#letters">Letters</Link></nav>
+        <nav aria-label="Main navigation"><Link href="/books" aria-current="page">Books</Link><Link href="/stories">Stories</Link><Link href="/#world">Deyvos</Link><Link href="/#author">Author</Link><Link href="/newsletters">Newsletters</Link></nav>
       </header>
       <article className="volume-hero">
         <div className="volume-visual"><img src={book.image} alt={book.imageAlt} width={book.imageWidth} height={book.imageHeight} /></div>
@@ -68,7 +68,7 @@ export default async function VolumePage({ params }: Props) {
           {!next && <Link href="/books"><small>Return to</small><strong>All Books of Deyvos</strong></Link>}
         </div>
       </aside>
-      <footer><Link className="wordmark" href="/" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></Link><p>Dark fantasy. Strange magic. Complicated people.</p><div><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
+      <footer><Link className="wordmark" href="/" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></Link><p>Dark fantasy. Strange magic. Complicated people.</p><div><Link href="/stories">Stories</Link><Link href="/newsletters">Newsletters</Link><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
     </main>
   );
 }

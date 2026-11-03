@@ -16,7 +16,7 @@ export default function NewslettersPage() {
     <main className="newsletters-page">
       <header className="site-header inner-header">
         <Link className="wordmark" href="/" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></Link>
-        <nav aria-label="Main navigation"><Link href="/books">Books</Link><Link href="/#world">Deyvos</Link><Link href="/#author">Author</Link><Link href="/newsletters" aria-current="page">Newsletters</Link></nav>
+        <nav aria-label="Main navigation"><Link href="/books">Books</Link><Link href="/stories">Stories</Link><Link href="/#world">Deyvos</Link><Link href="/#author">Author</Link><Link href="/newsletters" aria-current="page">Newsletters</Link></nav>
       </header>
 
       <section className="newsletter-hero"><div><p className="eyebrow">An archive in waiting</p><h1>Letters from<br />Deyvos</h1><p>Dispatches about the books, the world behind them, the work of writing, and where AJ will be next.</p></div></section>
@@ -33,7 +33,7 @@ export default function NewslettersPage() {
 
       <section className="newsletter-cta"><div><p className="eyebrow">Receive the next dispatch</p><h2>Be there when<br />the first letter arrives.</h2><p>Occasional letters only. No noise. No ravens sold to third parties.</p><div className="letter-actions"><a className="button primary" href="https://forms.gle/EzBSfKiXstHPeXsb9" target="_blank" rel="noreferrer">Join Deyvos Letters <Arrow /></a><Link className="archive-link" href="/">Return home</Link></div></div></section>
 
-      <footer><Link className="wordmark" href="/" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></Link><p>Dark fantasy. Strange magic. Complicated people.</p><div><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
+      <footer><Link className="wordmark" href="/" aria-label="Books of Deyvos home"><img src="/DeyvosLogo.png" alt="" aria-hidden="true" width="1083" height="1058" /><span>BOOKS OF DEYVOS</span></Link><p>Dark fantasy. Strange magic. Complicated people.</p><div><Link href="/stories">Stories</Link><a href="mailto:hello@deyvosbooks.com">Contact</a><span>© {new Date().getFullYear()} AJ Reid</span></div></footer>
     </main>
   );
 }
